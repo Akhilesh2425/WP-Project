@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Education</title>
+    <style>
+        body{
+            font-family:Arial, sans-serif;
+            background-image: url('https://media.istockphoto.com/id/1061787480/photo/migratory-birds-flying-in-the-shape-of-v-on-the-cloudy-sunset-sky.jpg?s=612x612&w=0&k=20&c=-EhIcqjQuskdmVTiBK-IUnO7aGLxnOpiKjvlj7VvW4I=');
+            text-align:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 120vh;
+            margin: 0;
+        }
+        .container{
+            max-width:950px;
+            margin:auto;
+            padding:20px;
+        }
+        h1{
+            color:#8C1515;
+        }
+        .courses{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+            width: 100%;
+            height: 100%;
+            background-color: #a95696;
+        }
+        .course{
+            background:rgb(221, 154, 154);
+            padding:15px;
+            border-radius:8px;
+            width:250px;
+            box-shadow:0px 0px 10px rgba(176, 170, 170, 0.2);
+            transition: 0.5s ease-in-out;
+            border:2px solid #000000;
+        }
+        .course:hover{
+            transform:scale(1.1) rotate(10deg);
+        }
+        .couser{
+            background:rgb(221, 154, 154);
+            padding:15px;
+            border-radius:8px;
+            width:250px;
+            box-shadow:0px 0px 10px rgba(176, 170, 170, 0.2);
+            transition: 0.5s ease-in-out;
+            border:2px solid #000000;
+        }
+        .couser:hover{
+            transform:scale(1.1);
+            width:300px;
+            padding:20px;
+        }
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+        th,td{
+            border:1px solid white;
+            padding:10px;
+            text-align:center;
+            background-color:rgba(255, 255, 255, 0.2);
+        }
+        th{
+            background-color:#8C1515;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Educational Programs</h1>
+    <div class="container">
+        <p>Stanford University offers a wide range of academic programs designed to develop leadership and innovation.</p>
+        <h2>Major Departments</h2>
+        <div class="courses">
+            <div class="course"><h3>Computer Science</h3><p>Explore AI,Data Sciences Machine Learning, and Software Engineering.</p></div>
+            <div class="course"><h3>Business Administration</h3><p>Learn business strategies and entrepreneurship.</p></div>
+            <div class="course"><h3>Medicine</h3><p>Advanced research in healthcare and biotechnology.</p></div>
+            <div class="couser"><h3>Engineering</h3><p>Innovations in mechanical,electrical,and civil engineering.</p></div>
+        </div>
+        
+    </div>
+</body>
+</html>

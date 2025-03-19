@@ -1,0 +1,42 @@
+body{
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20240614/pngtree-mountain-landscape-background-with-color-gradations-image_15868475.jpg');
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+h1{
+    color: rgb(227, 209, 209);
+}
+.pic{
+width:150px;
+height:150px;
+top: 10%; 
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/b/b5/Seal_of_Leland_Stanford_Junior_University.svg");
+background-size:cover;
+border-radius:50%;
+background-repeat: no-repeat;
+background-color:white;
+margin:auto;
+border:4px solid black;
+transition:transform 0.4s ease-in-out;
+}
+.login-box{
+align-items: center;
+text-align: center;
+letter-spacing: 1px;
+background-color:orange;
+}
+input{
+display: block;
+width: 35%;
+padding: 10px;
+border-radius: 8px;
+text-align: center;
+margin: 10px auto;
+}
+input::placeholder{
+text-align: center;
+}

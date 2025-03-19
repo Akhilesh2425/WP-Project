@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registeration</title>
+        <link rel="stylesheet" href="regstyle.css">
+        <style>
+             .btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 16px;
+                border-radius: 8px;
+                margin-top: 20px;
+                color: blue !important;
+                font-weight: bold;
+             }
+             .dob-container{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+             }
+             .dob-label{
+                text-align: center;
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 15px;
+             }
+             
+        </style>
+    </head>
+    <body>
+        <div class="pic"></div>
+        <h1 style="text-align: center;">Welcome to Admin Registration Page</h1>
+        <input type="name" id="nameof" placeholder="Enter your name">
+        <input type="name" id="fnameof" placeholder="Enter your surname">
+        <input type="number" id="num" placeholder="Enter your mobile number">
+        <input type="email" id="email" placeholder="Enter your email address">
+        <input type="password" id="password" placeholder="Set your password">
+        <input type="password" id="cpassword" placeholder="Confirm your password">
+        <div class="dob-label">Date of Birth:</div>
+            <div class="dob-container">
+                <select id="day" name="day" required>
+                    <option value="" >Day</option>
+                    <script>
+                        for (let i = 1; i <= 31; i++) {
+                            document.write(`<option value="${i}">${i}</option>`);
+                        }
+                    </script>
+                </select>
+
+                <select id="month" name="month" required>
+                    <option value="">Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <select id="year" name="year" required>
+                    <option value="">Year</option>
+                    <script>
+                        let currentYear = new Date().getFullYear();
+                        for (let i = currentYear; i >= 1900; i--) {
+                            document.write(`<option value="${i}">${i}</option>`);
+                        }
+                    </script>
+                </select>
+            </div>
+            <div class="btn">
+                <button type= "submit" class="btn" onclick="validate1()">Register</button>
+            </div>
+    <script src="validationforreg.js"></script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            background-color: #87CEEB;
+        }
+        body{
+          background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h2>Your Cart</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Cover</th>
+                <th>Book Title</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://m.media-amazon.com/images/I/61sFlQ5QNoL._AC_UF1000,1000_QL80_.jpg" alt="Book 1" width="50"></td>
+                <td>The broken Wings</td>
+                <td>Rs.1645</td>
+                <td><input type="number" value="1" min="0"></td>
+                <td><button>Remove</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://cdn.kobo.com/book-images/81b9dcba-dc33-4bb1-b5d3-c3a75b07d1c4/353/569/90/False/the-complete-works-of-william-shakespeare-all-214-plays-sonnets-poems-apocryphal-plays-including-the-biography-of-the-author.jpg" alt="Book 1" width="50"></td>
+                <td>The Complete Works</td>
+                <td>Rs.2500</td>
+                <td><input type="number" value="1" min="0"></td>
+                <td><button>Remove</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://m.media-amazon.com/images/I/917tRfXSK2L._AC_UF1000,1000_QL80_.jpg" alt="Book 1" width="50"></td>
+                <td>Problem solving with C++</td>
+                <td>Rs.4000</td>
+                <td><input type="number" value="1" min="0"></td>
+                <td><button>Remove</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://d9h54mr6do0h0.cloudfront.net/bookimage/9789355738202_tn.jpg" alt="Book 1" width="50"></td>
+                <td>JEE mathematics</td>
+                <td>Rs.795</td>
+                <td><input type="number" value="1" min="0"></td>
+                <td><button>Remove</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/book/8/s/b/concept-of-physics-by-h-c-verma-part-i-session-2024-25-original-imah5w7xcnvujg7y.jpeg?q=90&crop=false" alt="Book 1" width="50"></td>
+                <td>Concepts of Physics</td>
+                <td>Rs.645</td>
+                <td><input type="number" value="1" min="0"></td>
+                <td><button>Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" onclick="seeof()">Proceed to Checkout</button>
+    <script>
+        function seeof()
+        {
+            alert("Checked out succesfully");
+            return;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stanford University</title>
+    <style>
+        body{
+            background:linear-gradient(90deg, #8C1515, #B48C35);
+            font-family:'Lato', sans-serif;
+            color:white;
+            margin:0;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:100vh;
+        }
+        .container{
+            display:flex;
+            align-items:center;
+            width:90%;
+            max-width:1000px;
+            padding:20px;
+            border-radius:10px;
+        }
+        .pic{
+            width:150px;
+            height:150px;
+            background-image:url("https://upload.wikimedia.org/wikipedia/commons/b/b5/Seal_of_Leland_Stanford_Junior_University.svg");
+            background-size:cover;
+            border-radius:50%;
+            background-color:white;
+            margin-right:20px;
+            border:4px solid white;
+            transition:transform 0.4s ease-in-out;
+        }
+        .pic:hover{
+            transform:scale(1.1);
+        }
+        h1{
+            font-size: 28px;
+            font-weight: 500;
+            margin: 0;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid white;
+            width: 0;
+            animation: typing 3s steps(30, end) forwards, blink 0.8s infinite;
+            color: #FFF8E7;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 28ch; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pic"></div>
+        <h1>Welcome to Stanford University</h1>
+    </div>
+</body>
+</html>

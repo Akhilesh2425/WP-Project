@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Updates</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3932b;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            background-color: #333;
+            padding: 20px;
+        }
+        .card {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .card li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #eef2ff;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .card a:hover {
+            color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>Tech Fest 2025</strong> - April 10, 2025</li>
+                <li><strong>Sports Meet</strong> - May 15, 2025</li>
+                <li><strong>Convocation</strong> - June 20, 2025</li>
+            </ul>
+        </div>
+        <div class="card notices">
+            <h2>Important Notices</h2>
+            <ul>
+                <li><a href="examsched.html" target="_blank">Exam Schedule 2025</a></li>
+                <li><a href="fee.html" target="_blank">Updated Fee Structure</a></li>
+                <li><a href="hostel.html" target="_blank">Hostel Rules & Regulations</a></li>
+            </ul>
+        </div>
+        <div class="card awards">
+            <h2>College Achievements</h2>
+            <ul>
+                <li><b>Best University Award 2024</b>-National Education Summit</li>
+                <li><b>AI Research Excellence</b>-Recognized by Stanford AI Lab</li>
+                <li><b>Sports Championship</b>-Winners of State-Level Tournament</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

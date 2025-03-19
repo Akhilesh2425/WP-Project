@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login form</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 16px;
+                border-radius: 8px;
+                margin-top: 20px;
+                color: blue !important;
+                font-weight: bold;
+             }
+             .for{
+                text-align: center;
+                display: block;
+                margin-top: 20px;
+             }
+        </style>
+    </head>
+    <body>
+        <div class="pic"></div>
+        <h1 style="text-align: center;">Welcome to Student Login Page</h1>
+        <input type="box" placeholder="Enter student ID" id="sa">
+        <input type="password" placeholder="Enter password" id="pa">
+        <a href="#" class="for" style="color: rgb(40, 40, 27);">Forgot password?</a>
+        <div class="btn">
+            <button type= "submit" class="btn" onclick="validate()">Login</button>
+        </div>       
+        <script src="validationforlogin.js"></script>
+    </body>

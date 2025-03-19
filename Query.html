@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Queries</title>
+        <link rel="stylesheet" href="cont.css">
+    </head>
+    <body>
+        <h2>Send an Inquiry</h2>
+        <form>
+            <input type="text" id="na" placeholder="Your Name" >
+            <input type="ma" id="em"placeholder="Your Email" >
+            <textarea placeholder="Your Message" id="me" rows="5"></textarea>
+            <button type="submit" onclick="see()">Submit</button>
+        </form>
+        <script>
+            function see()
+            {
+                var name=document.getElementById('na').value;
+                let email = document.getElementById("em").value.trim();
+                var me=document.getElementById('me').value;
+                if(name==="")
+            {
+                alert("please enter your name");
+                return false;
+            }
+                if(!email.includes("@") || !email.includes("."))
+                {
+                    alert("Please enter a valid email address.");
+                    return false;
+                }
+                if(me==="")
+                {
+                    alert("Message cannot be empty");
+                    return false;
+                }
+                else{
+                    alert("Query sent successfully..Thank you for your response");
+                    return;
+                }
+                
+            }
+        </script>
+    </body>
+</html>
